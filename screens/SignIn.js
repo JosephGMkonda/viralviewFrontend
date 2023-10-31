@@ -1,8 +1,13 @@
 import React from 'react'
+import {View,Text} from 'react-native'
 
-function SignIn() {
+const SignIn =() => {
   return (
-    <div>SignIn</div>
+    <View>
+        <Text>
+            Hello SignIn
+            </Text>
+    </View>
   )
 }
 
