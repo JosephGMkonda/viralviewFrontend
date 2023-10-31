@@ -5,7 +5,10 @@ import {SIZES,COLORS} from '../constants/theme'
 
 
 const {height} = Dimensions.get("window")
-const Welcome = () => {
+
+
+
+const Welcome = ({navigation: {navigate} }) => {
   return (
     <SafeAreaView>
         <View>
@@ -68,6 +71,7 @@ const Welcome = () => {
               }}
               >
                 <TouchableOpacity
+                onPress={() => navigate("SignIn")}
                 style={{
                   backgroundColor: COLORS.blue,
                   paddingHorizontal: SIZES.padding2,
@@ -91,6 +95,7 @@ const Welcome = () => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
+                onPress={() => navigate("SignUp")}
                 style={{
                   
                   paddingHorizontal: SIZES.padding3,
