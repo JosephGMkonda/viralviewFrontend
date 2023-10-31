@@ -1,13 +1,19 @@
 import React from 'react'
-import {View,Text} from 'react-native'
+import {View,Text, SafeAreaView} from 'react-native'
 
 const SignIn =() => {
   return (
-    <View>
-        <Text>
-            Hello SignIn
-            </Text>
-    </View>
+    <SafeAreaView>
+        <View 
+        style={{
+            padding: 30,
+        }}
+        >
+            <View>
+                <Text>LogIn here</Text>
+            </View>
+        </View>
+    </SafeAreaView>
   )
 }
 

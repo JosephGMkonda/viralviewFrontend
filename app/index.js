@@ -15,7 +15,8 @@ const Home = () => {
             name="Welcome"
             component={Welcome}
             options={{
-                headerShown: false
+                headerShown: false,
+                headerBackTitle: null
             }}
             />
 
