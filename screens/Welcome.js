@@ -63,13 +63,16 @@ const Welcome = () => {
               style={{
                 paddingHorizontal: SIZES.padding,
                 paddingVertical: SIZES.padding4,
+                flexDirection:"row"
+                
               }}
               >
                 <TouchableOpacity
                 style={{
                   backgroundColor: COLORS.blue,
-                  paddingHorizontal: SIZES.padding3,
+                  paddingHorizontal: SIZES.padding2,
                   paddingVertical: SIZES.padding3,
+                  borderRadius: SIZES.radius2,
                   
                   width:"48%",
                   
@@ -80,12 +83,33 @@ const Welcome = () => {
                   style={{
                     color: COLORS.white,
                     textAlign: 'center',
-                    
-                    
-                    borderRadius: SIZES.radius2,
                     fontWeight: 'bold',
+                    fontSize: SIZES.h4
                   }}
-                  >Login</Text>
+                  >SignIn</Text>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                style={{
+                  
+                  paddingHorizontal: SIZES.padding3,
+                  paddingVertical: SIZES.padding3,
+                  borderRadius: SIZES.radius2,
+                  
+                  width:"48%",
+                  
+
+                }}
+                >
+                  <Text
+                  style={{
+                    color: COLORS.black,
+                    textAlign: 'center',
+                    fontWeight: 'bold',
+                    fontSize: SIZES.h4
+                  }}
+                  >Signup</Text>
 
                 </TouchableOpacity>
                 </View>
