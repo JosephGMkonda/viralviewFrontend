@@ -16,7 +16,10 @@ const Home = () => {
             component={Welcome}
             options={{
                 headerShown: false,
-                headerBackTitle: null
+                headerMode: 'none',
+                headerShadowVisible: false,
+                headerTitle: ""
+
             }}
             />
 
@@ -24,7 +27,9 @@ const Home = () => {
             name="SignIn"
             component={SignIn}
             options={{
-                headerShown: false
+                headerShown: false,
+                headerShadowVisible: false,
+                headerTitle: ""
             }}
             />
 
@@ -32,7 +37,9 @@ const Home = () => {
             name="SignUp"
             component={SignUp}
             options={{
-                headerShown: false
+                headerShown: false,
+                headerShadowVisible:false,
+                headerTitle:""
             }}
             />
         </Stack.Navigator>
