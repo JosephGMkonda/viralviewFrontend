@@ -10,15 +10,15 @@ const Home = () => {
     return (
         <Stack.Navigator
         initialRouteName='Welcome'
+        
+
         >
             <Stack.Screen
             name="Welcome"
             component={Welcome}
             options={{
-                headerShown: false,
-                headerMode: 'none',
-                headerShadowVisible: false,
-                headerTitle: ""
+                
+
 
             }}
             />
