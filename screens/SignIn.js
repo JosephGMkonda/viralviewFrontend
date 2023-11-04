@@ -35,9 +35,9 @@ const SignIn =() => {
 
             style={{
               margin: 20,
-              padding: 15,
+              padding: 10,
               backgroundColor: COLORS.lightgray,
-              fontSize: 20,
+              fontSize: 15,
               borderRadius: SIZES.radius2,
               
 
@@ -52,9 +52,9 @@ const SignIn =() => {
 
             style={{
               margin: 20,
-              padding: 15,
+              padding: 10,
               backgroundColor: COLORS.lightgray,
-              fontSize: 20,
+              fontSize: 15,
               borderRadius: SIZES.radius2,
               
 
@@ -68,7 +68,7 @@ const SignIn =() => {
             style={{
               fontSize: 15,
               color: COLORS.blue,
-              alignItems: 'flex-start'
+              alignItems: 'flex-end'
             }}
             >Forgot your password ?</Text>
            </View>
@@ -108,7 +108,7 @@ const SignIn =() => {
           >
             <Text
             style={{
-              backgroundColor: COLORS.white,
+          
               paddingHorizontal: SIZES.padding2,
               paddingVertical: SIZES.padding3,
               
