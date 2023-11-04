@@ -67,8 +67,8 @@ const SignIn =() => {
             <Text 
             style={{
               fontSize: 15,
-              color: COLORS.secondary,
-              alignItems: 'flex-end'
+              color: COLORS.blue,
+              alignItems: 'flex-start'
             }}
             >Forgot your password ?</Text>
            </View>
@@ -79,8 +79,48 @@ const SignIn =() => {
 
            }}
           >
-            <Text>
+            <Text
+            style={{
+              backgroundColor: COLORS.blue,
+              paddingHorizontal: SIZES.padding2,
+              paddingVertical: SIZES.padding3,
+              borderRadius: SIZES.radius,
+              width: '90%',
+              textAlign: 'center',
+              color:COLORS.white,
+              shadowColor:COLORS.blue,
+              fontWeight: 'bold'
+              
+
+            }}
+            >
               Sign in
+            </Text>
+
+          </TouchableOpacity>
+
+          <TouchableOpacity
+           style={{
+            padding: 15,
+            
+
+           }}
+          >
+            <Text
+            style={{
+              backgroundColor: COLORS.white,
+              paddingHorizontal: SIZES.padding2,
+              paddingVertical: SIZES.padding3,
+              
+              width: '90%',
+              textAlign: 'center',
+              color:COLORS.black,
+              
+              
+
+            }}
+            >
+              Create new account
             </Text>
 
           </TouchableOpacity>
