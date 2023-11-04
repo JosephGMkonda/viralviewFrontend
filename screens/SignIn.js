@@ -1,6 +1,7 @@
 import React from 'react'
-import {View,Text, SafeAreaView, TextInput} from 'react-native'
+import {View,Text, SafeAreaView, TextInput,TouchableOpacity} from 'react-native'
 import { SIZES,COLORS } from '../constants/theme'
+
 
 const SignIn =() => {
   return (
@@ -23,7 +24,8 @@ const SignIn =() => {
             </View>
            <View 
            style={{
-            marginVertical: 35
+            marginVertical: 35,
+
            }}
            >
             <TextInput
@@ -33,13 +35,47 @@ const SignIn =() => {
 
             style={{
               margin: 20,
+              padding: 15,
               backgroundColor: COLORS.lightgray,
-              fontSize: 20
+              fontSize: 20,
+              borderRadius: SIZES.radius2,
+              
 
             }}
             />
+
+            <TextInput
+             placeholder='Password' 
+             secureTextEntry
+             placeholderTextColor={COLORS.black}
+             
+
+            style={{
+              margin: 20,
+              padding: 15,
+              backgroundColor: COLORS.lightgray,
+              fontSize: 20,
+              borderRadius: SIZES.radius2,
+              
+
+            }}
+            />
+
            </View>
 
+           <View>
+            <Text 
+            style={{
+              fontSize: 15,
+              color: COLORS.secondary,
+              alignItems: 'flex-end'
+            }}
+            >Forgot your password ?</Text>
+           </View>
+          <TouchableOpacity>
+            
+
+          </TouchableOpacity>
         </View>
     </SafeAreaView>
   )
