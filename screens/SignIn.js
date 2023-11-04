@@ -1,5 +1,5 @@
 import React from 'react'
-import {View,Text, SafeAreaView} from 'react-native'
+import {View,Text, SafeAreaView, TextInput} from 'react-native'
 import { SIZES,COLORS } from '../constants/theme'
 
 const SignIn =() => {
@@ -16,13 +16,30 @@ const SignIn =() => {
                 style={{
                   fontSize: 24,
                   color: COLORS.blue,
-                  paddingTop: 30,
+                  paddingTop: 40,
                   fontWeight: 'bold'
                 }}
                 >Login here</Text>
             </View>
+           <View 
+           style={{
+            marginVertical: 35
+           }}
+           >
+            <TextInput
+             placeholder='Username' 
+             placeholderTextColor={COLORS.black}
+             
 
-            
+            style={{
+              margin: 20,
+              backgroundColor: COLORS.lightgray,
+              fontSize: 20
+
+            }}
+            />
+           </View>
+
         </View>
     </SafeAreaView>
   )
