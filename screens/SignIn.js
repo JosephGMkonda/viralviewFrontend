@@ -72,8 +72,16 @@ const SignIn =() => {
             }}
             >Forgot your password ?</Text>
            </View>
-          <TouchableOpacity>
+          <TouchableOpacity
+           style={{
+            padding: 15,
             
+
+           }}
+          >
+            <Text>
+              Sign in
+            </Text>
 
           </TouchableOpacity>
         </View>
