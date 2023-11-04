@@ -1,12 +1,12 @@
 import React from 'react'
 
-import {View,Text} from 'react-native'
+import {View,Text,SafeAreaView} from 'react-native'
 import { SIZES,COLORS } from '../constants/theme'
 
 const SignUp =() => {
   return (
 
-    <SafeAreaView>
+    <SafeAreaView>  
     <View>
         <View 
         style={{
