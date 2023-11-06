@@ -1,8 +1,13 @@
 import React from 'react'
+import { Text, View } from 'react-native'
 
-function Feed() {
+const Feed = () => {
   return (
-    <div>Feed</div>
+    <View>
+      <Text>Hello Feed</Text>
+    </View>
+    
+
   )
 }
 

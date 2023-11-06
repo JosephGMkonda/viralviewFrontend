@@ -63,21 +63,6 @@ const SignUp =({navigation: {navigate}}) => {
         />
 
 
-<TextInput
-         placeholder='Username' 
-         placeholderTextColor={COLORS.black}
-         
-
-        style={{
-          margin: 20,
-          padding: 10,
-          backgroundColor: COLORS.lightgray,
-          fontSize: 15,
-          borderRadius: SIZES.radius2,
-          
-
-        }}
-        />
 
         <TextInput
          placeholder='ConfirmPassword' 
