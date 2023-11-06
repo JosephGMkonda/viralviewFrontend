@@ -1,9 +1,9 @@
 import React from 'react'
 
-import {View,Text,SafeAreaView} from 'react-native'
+import {View,Text,SafeAreaView,TextInput} from 'react-native'
 import { SIZES,COLORS } from '../constants/theme'
 
-const SignUp =() => {
+const SignUp =({navigation: {navigate}}) => {
   return (
 
     <SafeAreaView>  
@@ -99,6 +99,7 @@ const SignUp =() => {
        </View>
 
       <TouchableOpacity
+      onPress={() => navigate("Feed")}
        style={{
         padding: 15,
         
@@ -106,6 +107,7 @@ const SignUp =() => {
        }}
       >
         <Text
+
         style={{
           backgroundColor: COLORS.blue,
           paddingHorizontal: SIZES.padding2,
