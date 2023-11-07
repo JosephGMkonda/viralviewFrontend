@@ -3,6 +3,7 @@ import {View,Text} from 'react-native'
 import { createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import {Welcome,SignIn,SignUp,Feed,Profile,Notification,Create,Chat} from '../screens/Index.js'
+import BottomTabNavigation from '../navigation/BottomTabNavigation.js';
 
 const Stack = createNativeStackNavigator()
 
