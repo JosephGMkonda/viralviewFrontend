@@ -18,7 +18,7 @@ const Home = () => {
             name="Welcome"
             component={Welcome}
             options={{
-                
+                 
 
 
             }}
@@ -45,12 +45,10 @@ const Home = () => {
             />
 
             <Stack.Screen
-            name="Feed"
-            component={Feed}
+            name="BottomTabNagivation"
+            component={BottomTabNavigation}
             options={{
-                headerShown: false,
-                
-                headerTitle: ""
+                headerShown: false
             }}
             />
         </Stack.Navigator>
