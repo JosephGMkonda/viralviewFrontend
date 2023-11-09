@@ -1,6 +1,7 @@
 import React from 'react';
 import {View,Text} from 'react-native'
 import { createNativeStackNavigator} from '@react-navigation/native-stack'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 import {Welcome,SignIn,SignUp,Feed,Profile,Notification,Create,Chat} from '../screens/Index.js'
 import BottomTabNavigation from '../navigation/BottomTabNavigation.js';

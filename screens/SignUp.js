@@ -1,6 +1,7 @@
 import React from 'react'
 
 import {View,Text,SafeAreaView,TextInput,TouchableOpacity} from 'react-native'
+
 import { SIZES,COLORS } from '../constants/theme'
 
 const SignUp =({navigation: {navigate}}) => {
