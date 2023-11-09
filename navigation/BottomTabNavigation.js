@@ -76,7 +76,7 @@ const BottomTabNavigation = () => {
                 return(
 
                     <LinearGradient
-                    colors=(['#F68464','#EEA849'])
+                    colors={['#F68464','#EEA849']}
                     style={{
                         alignItems: "center",
                         justifyContent: "center",
