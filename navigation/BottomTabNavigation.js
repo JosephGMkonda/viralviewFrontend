@@ -89,7 +89,7 @@ const BottomTabNavigation = () => {
 
                     }}>
                      
-                        <Feather name="plus-circle" size={24} color={COLORS.white}/>
+                        <feather name="plus-circle" size={24} color={COLORS.white}/>
 
                     </LinearGradient>
                     
