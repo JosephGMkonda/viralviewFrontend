@@ -9,6 +9,7 @@ const Stack = createNativeStackNavigator()
 
 const Home = () => {
     return (
+        <SafeAreaProvider onLayout={onLayoutRootView}>
         <Stack.Navigator
         initialRouteName='Welcome'
         
@@ -52,6 +53,7 @@ const Home = () => {
             }}
             />
         </Stack.Navigator>
+        </SafeAreaProvider>
     )
 }
 

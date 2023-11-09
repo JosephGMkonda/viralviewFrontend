@@ -84,7 +84,7 @@ const SignUp =({navigation: {navigate}}) => {
        </View>
 
       <TouchableOpacity
-      onPress={() => navigate("Feed")}
+      onPress={() => navigate("BottomTabNavigation")}
        style={{
         padding: 15,
         
