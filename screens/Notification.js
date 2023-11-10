@@ -1,8 +1,10 @@
-import React from 'react'
+import {View,Text} from 'react'
 
-function Notification() {
+const Notification =() => {
   return (
-    <div>Notification</div>
+    <View>
+    <Text>Notification</Text>
+    </View>
   )
 }
 

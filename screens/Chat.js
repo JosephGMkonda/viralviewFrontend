@@ -1,10 +1,11 @@
 
 
-import React from 'react'
-
-function Chat() {
+import {View,Text} from 'react'
+const Chat = () =>{
   return (
-    <div>Chat</div>
+    <View>
+    <Text>Hello Chat</Text>
+    </View>
   )
 }
 

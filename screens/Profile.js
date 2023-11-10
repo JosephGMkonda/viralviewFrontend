@@ -1,8 +1,10 @@
-import React from 'react'
+import {View,Text} from 'react'
 
-function Profile() {
+const Profile =() => {
   return (
-    <div>Profile</div>
+    <View>
+    <Text>Profile</Text>
+    </View>
   )
 }
 

@@ -1,8 +1,10 @@
-import React from 'react'
+import {View,Text} from 'react'
 
-function Create() {
+const  Create =() => {
   return (
-    <div>Create</div>
+    <View>
+    <Text>Hello Create</Text>
+    </View>
   )
 }
 
