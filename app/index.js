@@ -6,11 +6,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import {Welcome,SignIn,SignUp,Feed,Profile,Notification,Create,Chat} from '../screens/Index.js'
 import BottomTabNavigation from '../navigation/BottomTabNavigation.js';
 
+
 const Stack = createNativeStackNavigator()
 
 const Home = () => {
+    
     return (
-        <SafeAreaProvider onLayout={onLayoutRootView}>
+        <SafeAreaProvider >
         <Stack.Navigator
         initialRouteName='Welcome'
         
@@ -47,6 +49,7 @@ const Home = () => {
             />
 
             <Stack.Screen
+
             name="BottomTabNagivation"
             component={BottomTabNavigation}
             options={{

@@ -3,8 +3,10 @@ import React from 'react'
 import {View,Text,SafeAreaView,TextInput,TouchableOpacity} from 'react-native'
 
 import { SIZES,COLORS } from '../constants/theme'
+import { useNavigation } from '@react-navigation/native';
 
-const SignUp =({navigation: {navigate}}) => {
+const SignUp =() => {
+  const navigation = useNavigation();
   return (
 
     <SafeAreaView>  
@@ -85,7 +87,7 @@ const SignUp =({navigation: {navigate}}) => {
        </View>
 
       <TouchableOpacity
-      onPress={() => navigate("BottomTabNavigation")}
+      onPress={() => navigation.navigate("BottomTabNavigation")}
        style={{
         padding: 15,
         
