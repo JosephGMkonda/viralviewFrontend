@@ -7,6 +7,8 @@ import Feed from '../screens/Feed'
 import Chat from '../screens/Chat'
 import Create from '../screens/Create'
 import Notification from '../screens/Notification'
+import Profile from '../screens/Profile'
+
 
 const Tab = createBottomTabNavigator()
 
