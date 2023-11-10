@@ -93,7 +93,7 @@ const BottomTabNavigation = () => {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         return (
-                            <FontAwesome name="heart" size={24} color={focused ? COLORS.primary : COLORS.blue} />
+                            <FontAwesome5 name="heart" size={24} color={focused ? COLORS.primary : COLORS.blue} />
                         )
                     }
                 }}
