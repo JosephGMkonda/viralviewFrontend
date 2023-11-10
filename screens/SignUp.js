@@ -4,6 +4,7 @@ import {View,Text,SafeAreaView,TextInput,TouchableOpacity} from 'react-native'
 
 import { SIZES,COLORS } from '../constants/theme'
 import { useNavigation } from '@react-navigation/native';
+import BottomTabNavigation from '../navigation/BottomTabNavigation';
 
 const SignUp =() => {
   const navigation = useNavigation();

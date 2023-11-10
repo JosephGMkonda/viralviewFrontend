@@ -50,7 +50,7 @@ const Home = () => {
 
             <Stack.Screen
 
-            name="BottomTabNagivation"
+            name="BottomTabNavigation"
             component={BottomTabNavigation}
             options={{
                 headerShown: false

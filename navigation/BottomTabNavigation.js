@@ -1,11 +1,12 @@
 import React from 'react'
-import {feather,IonIcons,FontAwesome,FontAwesome5} from '@expo/vector-icons'
+import {feather,Ionicons,FontAwesome,FontAwesome5} from '@expo/vector-icons'
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { Platform, View,LinearGradient } from 'react-native'
 import { COLORS } from '../constants/theme'
 import Feed from '../screens/Feed'
 import Chat from '../screens/Chat'
 import Create from '../screens/Create'
+import Notification from '../screens/Notification'
 
 const Tab = createBottomTabNavigator()
 
