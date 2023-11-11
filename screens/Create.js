@@ -1,4 +1,4 @@
-import {View,Text} from 'react'
+import {View,Text} from 'react-native'
 
 export const  Create =() => {
   return (
