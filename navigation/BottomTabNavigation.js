@@ -9,6 +9,8 @@ import Create from '../screens/Create'
 import Notification from '../screens/Notification'
 import Profile from '../screens/Profile'
 import { LinearGradient } from 'expo-linear-gradient'
+import { Font } from 'expo-font';
+import { FontAwesome } from '@expo/vector-icons';
 
 
 const Tab = createBottomTabNavigator()
@@ -33,6 +35,17 @@ const screenOptions = {
 
 const BottomTabNavigation = () => {
 
+    useEffect(() => {
+        const loadFonts = async () => {
+          await Font.loadAsync({
+            FontAwesome: require('@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf'),
+          });
+          // Set a state variable or perform any other actions after the font is loaded
+        };
+      
+        loadFonts();
+      }, []);
+
     return (
 
         <Tab.Navigator screenOptions={screenOptions}>
@@ -43,7 +56,7 @@ const BottomTabNavigation = () => {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         return (
-                            <Feather name="home" size={24} color={focused ? COLORS.primary : COLORS.blue} />
+                            <Feather name="home" size={24} color={focused ? COLORS.primary : COLORS.blue} style={{ fontFamily: 'feather' }} />
                         )
                     }
                 }}
@@ -72,9 +85,9 @@ const BottomTabNavigation = () => {
                                 style={{
                                     alignItems: "center",
                                     justifyContent: "center",
-                                    width: Platform.OS == 'ios' ? 50 : 60,
-                                    height: Platform.OS == 'ios' ? 50 : 60,
-                                    top: Platform.OS == 'ios' ? -10 : -20,
+                                    width: Platform.OS == 'android' ? 50 : 60,
+                                    height: Platform.OS == 'android' ? 50 : 60,
+                                    top: Platform.OS == 'android' ? -10 : -20,
                                     borderRadius: 22,
                                     borderColor: '#fff',
                                     borderWidth: 4
@@ -105,7 +118,12 @@ const BottomTabNavigation = () => {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         return (
-                            <FontAwesome name="user-circle" size={24} color={focused ? COLORS.primary : COLORS.blue} />
+                            <FontAwesome 
+                            name="user-circle" 
+                            size={24}
+                            color={focused ? COLORS.primary : COLORS.blue}
+                            style={{ fontFamily: 'FontAwesome' }}
+                             />
                         )
                     }
                 }}
