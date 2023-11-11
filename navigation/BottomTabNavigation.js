@@ -3,11 +3,11 @@ import { Feather, Ionicons, FontAwesome, FontAwesome5 } from '@expo/vector-icons
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Platform, View, } from 'react-native'
 import { COLORS } from '../constants/theme'
-import Feed from '../screens/Feed'
-import Chat from '../screens/Chat'
-import Create from '../screens/Create'
-import Notification from '../screens/Notification'
-import Profile from '../screens/Profile'
+import {Feed} from '../screens/Feed'
+import {Chat} from '../screens/Chat'
+import {Create} from '../screens/Create'
+import {Notification} from '../screens/Notification'
+import {Profile} from '../screens/Profile'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Font } from 'expo-font';
 
