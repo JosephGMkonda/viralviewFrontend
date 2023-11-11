@@ -1,10 +1,25 @@
-import React from 'react'
-import { SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
+import React, {useEffect} from 'react'
+import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import { COLORS, FONTS } from '../constants/theme'
 import { MaterialIcons,Ionicons,Feather,Foundation,MaterialCommunityIcons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
+import { Font } from 'expo-font';
+
 
 export const Feed = () => {
+
+  useEffect(() => {
+    const loadFonts = async () => {
+      await Font.loadAsync({
+        FontAwesome: require('@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf'),
+        feather: require('@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Feather.ttf'),
+      });
+      // Set a state variable or perform any other actions after the font is loaded
+    };
+  
+    loadFonts();
+  }, []);
+
   function renderHeader(){
     return (
       <View
@@ -24,15 +39,13 @@ export const Feed = () => {
         >
           <Text
           style={{
-            ...FONTS.body4,
-            marginRight: 4
+            ...FONTS.body2,
+            marginRight: 4,
+            fontWeight: 'bold',
+            color: COLORS.blue
             }}
           >ViralView</Text>
-          <MaterialIcons 
-          name='keyboard-arrow-down'
-          size={24}
-          color={COLORS.black}
-          />
+          
 
         </View>
 
@@ -43,29 +56,7 @@ export const Feed = () => {
 
         }}
         >
-        <TouchableOpacity
-        style={{
-          height: 50,
-          width: 50,
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: '#fff',
-          shadowColor: "#182784",
-          shadowOffset: {
-            width: 0,
-            height: 4.5,
 
-
-          },
-          shadowOpacity: 0.12,
-          shadowRadius: 6.5,
-          elevation: 2,
-          borderRadius: 22
-
-        }}
-        >
-          <Ionicons name='filter' size={24} color={COLORS.black} />
-         </TouchableOpacity>
 
          <LinearGradient
          colors={['#F68464','#EEA849']}
@@ -95,9 +86,46 @@ export const Feed = () => {
 
          }}
          >
-       <Ionicons name="chatbox-outline"/>
+       <Ionicons name="chatbox-outline" size={24} color={COLORS.white}/>
          </LinearGradient>
         </View>
+
+      </View>
+    )
+  }
+
+  //Feed Post Function
+
+  function renderFeedPost(){
+    return(
+      <View
+      style={{
+        backgroundColor: "#fff",
+        flexDirection: 'column',
+        width: '100%',
+        borderRadius: 26,
+        borderWidth: 1,
+        borderColor: "#fff",
+        marginVertical: 12,
+
+
+      }}
+      >
+        {/* {Post Header} */}
+        <View style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: 8
+        }}>
+
+          <View>
+            
+          </View>
+
+        </View>
+
+
 
       </View>
     )
@@ -109,6 +137,11 @@ export const Feed = () => {
     }}>
       <View style={{ flex:1, paddingHorizontal: 22}}>
         {renderHeader()}
+        {renderFeedPost()}
+
+        <ScrollView>
+
+        </ScrollView>
 
       </View>
 
