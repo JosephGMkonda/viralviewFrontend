@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Feather, Ionicons, FontAwesome, FontAwesome5 } from '@expo/vector-icons'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Platform, View, } from 'react-native'
@@ -10,7 +10,7 @@ import Notification from '../screens/Notification'
 import Profile from '../screens/Profile'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Font } from 'expo-font';
-import { FontAwesome } from '@expo/vector-icons';
+
 
 
 const Tab = createBottomTabNavigator()
@@ -39,6 +39,7 @@ const BottomTabNavigation = () => {
         const loadFonts = async () => {
           await Font.loadAsync({
             FontAwesome: require('@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf'),
+            feather: require('@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Feather.ttf'),
           });
           // Set a state variable or perform any other actions after the font is loaded
         };
