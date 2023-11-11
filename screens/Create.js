@@ -1,6 +1,6 @@
 import {View,Text} from 'react'
 
-const  Create =() => {
+export const  Create =() => {
   return (
     <View>
     <Text>Hello Create</Text>
@@ -8,4 +8,3 @@ const  Create =() => {
   )
 }
 
-export default Create

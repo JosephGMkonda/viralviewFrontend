@@ -1,6 +1,6 @@
 import {View,Text} from 'react'
 
-const Notification =() => {
+export const Notification =() => {
   return (
     <View>
     <Text>Notification</Text>
@@ -8,4 +8,3 @@ const Notification =() => {
   )
 }
 
-export default Notification

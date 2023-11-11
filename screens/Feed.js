@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const Feed = () => {
+export const Feed = () => {
   return (
     <View>
       <Text>Hello Feed</Text>
@@ -11,4 +11,3 @@ const Feed = () => {
   )
 }
 
-export default Feed

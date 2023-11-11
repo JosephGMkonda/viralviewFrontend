@@ -1,6 +1,6 @@
 import {View,Text} from 'react'
 
-const Profile =() => {
+export const Profile =() => {
   return (
     <View>
     <Text>Profile</Text>
@@ -8,4 +8,3 @@ const Profile =() => {
   )
 }
 
-export default Profile
