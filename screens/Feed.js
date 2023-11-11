@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react'
-import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { SafeAreaView, ScrollView, Text, TouchableOpacity, View,Image } from 'react-native'
 import { COLORS, FONTS } from '../constants/theme'
 import { MaterialIcons,Ionicons,Feather,Foundation,MaterialCommunityIcons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Font } from 'expo-font';
+import {images} from '../constants/images'
 
 
 export const Feed = () => {
@@ -119,9 +120,37 @@ export const Feed = () => {
           marginTop: 8
         }}>
 
-          <View>
-            
+          <View style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            marginHorizontal: 8,
+
+          }}>
+            <Image
+            source={images.user1} 
+            style={{
+              height: 52,
+              width: 52,
+              borderRadius: 20,
+            }}
+            />
+            <View
+            style={{
+              marginLeft: 12
+            }}
+            >
+              <Text style={{...FONTS.body4, fontWeight: 'bold'}}>joseph mkonda</Text>
+              <Text style={{...FONTS.body4, fontWeight: 'bold',color:COLORS.primary}}>2hrs</Text>
+
+            </View>
+            <MaterialCommunityIcons
+            name='dots-vertical'
+            size={24}
+            colors= {COLORS.black}
+            />
           </View>
+          
+          
 
         </View>
 
