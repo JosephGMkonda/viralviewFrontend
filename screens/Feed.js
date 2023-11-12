@@ -126,7 +126,7 @@ export const Feed = () => {
 
           }}>
             <Image
-            source={require("../assets/images/user2.jpg")}/>
+            source={require("../assets/images/user2.jpg")}
             style={{
               height: 52,
               width: 52,
@@ -155,7 +155,44 @@ export const Feed = () => {
 
         </View>
 
-        <View>
+        <View
+        style={{
+          marginHorizontal: 8,
+          marginVertical: 8
+        }}
+        >
+
+        <Image
+            source={require("../assets/images/user1.jpg")}
+            style={{
+              height: 100,
+              width: '100%',
+              
+            }}
+            />
+            <Text
+            style={{
+              marginHorizontal: 8,
+              marginVertical: 8
+            }}
+            >
+               Trimol Food recep best of all time find us around petrodal
+            </Text>
+
+            <Text
+            style={{
+              marginHorizontal: 8,
+              marginVertical: 8,
+              color:'#182784'
+            }}
+            >
+              Price: K2000
+
+            </Text>
+
+
+
+
           
         </View>
 
