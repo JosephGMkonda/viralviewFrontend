@@ -4,7 +4,6 @@ import { COLORS, FONTS } from '../constants/theme'
 import { MaterialIcons,Ionicons,Feather,Foundation,MaterialCommunityIcons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Font } from 'expo-font';
-import {images} from '../constants/images'
 
 
 export const Feed = () => {
@@ -127,7 +126,7 @@ export const Feed = () => {
 
           }}>
             <Image
-            source={images.user1} 
+            source={require("../assets/images/user2.jpg")}/>
             style={{
               height: 52,
               width: 52,
@@ -143,15 +142,21 @@ export const Feed = () => {
               <Text style={{...FONTS.body4, fontWeight: 'bold',color:COLORS.primary}}>2hrs</Text>
 
             </View>
-            <MaterialCommunityIcons
+
+          </View>
+
+          <MaterialCommunityIcons
             name='dots-vertical'
             size={24}
             colors= {COLORS.black}
             />
-          </View>
-          
+
           
 
+        </View>
+
+        <View>
+          
         </View>
 
 
