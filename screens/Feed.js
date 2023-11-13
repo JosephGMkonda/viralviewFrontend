@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { SafeAreaView, ScrollView, Text, TouchableOpacity, View,Image } from 'react-native'
-import { COLORS, FONTS } from '../constants/theme'
+import { COLORS, FONTS, SIZES } from '../constants/theme'
 import { MaterialIcons,Ionicons,Feather,Foundation,MaterialCommunityIcons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Font } from 'expo-font';
@@ -163,9 +163,10 @@ export const Feed = () => {
         >
 
         <Image
-            source={require("../assets/images/user1.jpg")}
+            source={require("../assets/images/post1.jpg")}
             style={{
-              height: 100,
+              marginTop: 2,
+              height: 200,
               width: '100%',
               
             }}
@@ -183,7 +184,7 @@ export const Feed = () => {
             style={{
               marginHorizontal: 8,
               marginVertical: 8,
-              color:'#182784'
+              color:' #FF0000'
             }}
             >
               Price: K2000
@@ -194,6 +195,50 @@ export const Feed = () => {
 
 
           
+        </View>
+        {/* comment section here */}
+
+        <View
+        style={{
+          marginHorizontal: 8,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          paddingBottom: 6
+        }}
+        >
+          <View style={{
+            flexDirection:'row',
+
+          }}>
+            <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginRight: SIZES.padding2
+            }}
+            >
+              <Feather name='heart' size={20} color={COLORS.black}/>
+              <Text style={{...FONTS.body4, marginLeft: 2}}>40</Text>
+
+            </View>
+
+
+            <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              
+            }}
+            >
+              <MaterialCommunityIcons name='message-text-outline' size={20} color={COLORS.black}/>
+              <Text style={{...FONTS.body4, marginLeft: 2}}>40</Text>
+
+            </View>
+
+          </View>
+
+
         </View>
 
 
