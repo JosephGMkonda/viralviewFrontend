@@ -196,7 +196,7 @@ export const Feed = () => {
 
           
         </View>
-        {/* comment section here */}
+        {/* comment n like section here */}
 
         <View
         style={{
@@ -232,7 +232,7 @@ export const Feed = () => {
             }}
             >
               <MaterialCommunityIcons name='message-text-outline' size={20} color={COLORS.black}/>
-              <Text style={{...FONTS.body4, marginLeft: 2}}>40</Text>
+              <Text style={{...FONTS.body4, marginLeft: 2}}>20</Text>
 
             </View>
 
