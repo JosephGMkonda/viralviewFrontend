@@ -239,7 +239,17 @@ export const Feed = () => {
               flexDirection:"row"
             }}>
               <View>
-                <Text style={{...FONTS.body2, fontWeight:'bold'}}>Liked by 34</Text>
+                <Text style={{...FONTS.body4}}>Liked by 34</Text>
+
+              </View>
+
+              <View style={{
+                flexDirection:'row',
+                alignItems:"center",
+                justifyContent:"center",
+                marginLeft: 10
+
+              }}>
 
               </View>
 
