@@ -250,6 +250,7 @@ export const Feed = () => {
                 marginLeft: 10
 
               }}>
+                
 
               </View>
 
