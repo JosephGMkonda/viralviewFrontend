@@ -184,7 +184,7 @@ export const Feed = () => {
             style={{
               marginHorizontal: 8,
               marginVertical: 8,
-              color:' #FF0000'
+              color:'#FF0000'
             }}
             >
               Price: K2000
