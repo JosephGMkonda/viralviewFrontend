@@ -235,6 +235,15 @@ export const Feed = () => {
               <Text style={{...FONTS.body4, marginLeft: 2}}>20</Text>
 
             </View>
+            <View style={{
+              flexDirection:"row"
+            }}>
+              <View>
+                <Text style={{...FONTS.body2, fontWeight:'bold'}}>Liked by 34</Text>
+
+              </View>
+
+            </View>
 
           </View>
 
