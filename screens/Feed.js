@@ -4,6 +4,17 @@ import { COLORS, FONTS, SIZES } from '../constants/theme'
 import { MaterialIcons,Ionicons,Feather,Foundation,MaterialCommunityIcons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Font } from 'expo-font';
+import {friends} from "../constants/data"
+import {images} from '../constants/images'
+
+
+const users = [
+  images.user1,
+  images.user2,
+  images.user3,
+  images.user4
+
+]
 
 
 export const Feed = () => {
@@ -103,10 +114,10 @@ export const Feed = () => {
         backgroundColor: "#fff",
         flexDirection: 'column',
         width: '100%',
-        borderRadius: 2,
+        borderRadius: 20,
         borderWidth: 1,
         borderColor: "#fff",
-        marginVertical: 2,
+        marginVertical: 25,
 
 
       }}
@@ -256,6 +267,25 @@ export const Feed = () => {
                 marginLeft: 10
 
               }}>
+
+                {
+                  users.map((user,index)=>(
+                    <Image
+                    source={user}
+                    key={index}
+                    style={{
+                      width:25,
+                      height:25,
+                      borderRadius:999,
+                      borderWidth: 1,
+                      borderColor:"#fff",
+                      marginLeft:-5,
+                      
+                    }}
+
+                    />
+                  ))
+                }
 
 
               </View>
