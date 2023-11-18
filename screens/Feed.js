@@ -103,10 +103,10 @@ export const Feed = () => {
         backgroundColor: "#fff",
         flexDirection: 'column',
         width: '100%',
-        borderRadius: 26,
+        borderRadius: 2,
         borderWidth: 1,
         borderColor: "#fff",
-        marginVertical: 12,
+        marginVertical: 2,
 
 
       }}
@@ -203,7 +203,7 @@ export const Feed = () => {
           marginHorizontal: 8,
           flexDirection: 'row',
           alignItems: 'center',
-          justifyContent: 'space-between',
+          justifyContent:'space-between',
           paddingBottom: 6
         }}
         >
@@ -235,26 +235,9 @@ export const Feed = () => {
               <Text style={{...FONTS.body4, marginLeft: 2}}>20</Text>
 
             </View>
-            <View style={{
-              flexDirection:"row"
-            }}>
-              <View>
-                <Text style={{...FONTS.body4}}>Liked by 34</Text>
 
-              </View>
 
-              <View style={{
-                flexDirection:'row',
-                alignItems:"center",
-                justifyContent:"center",
-                marginLeft: 10
 
-              }}>
-                
-
-              </View>
-
-            </View>
 
           </View>
 
